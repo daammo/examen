@@ -16,7 +16,7 @@ public class Putadon {
 		//Variables inicialización
 		String frase="";
 		int numPos=0;
-		int numRepeticiones=0;
+		int numApariciones=0;
 		char letra=0;
 		
 		//Pedimos datos
@@ -30,12 +30,14 @@ public class Putadon {
 		
 		//Buscamos las letras
 		for(int i=0;i<frase.length();i++){
-			if(letra==frase.charAt(i-1)){
-				numRepeticiones=numRepeticiones;
-				System.out.println("Letra "+letra+" encontrada en la posicion "+i);
+			if(letra==frase.charAt(i)){					
+			System.out.println("Letra "+letra+" encontrada en la posicion "+i);
+			numApariciones++; 
 			}
+			
 		}
-		System.out.println("Total repeticiones "+numRepeticiones);
+		
+		System.out.println("Total apariciones "+numApariciones);
 	
 	}
 }
